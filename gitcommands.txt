@@ -1,0 +1,29 @@
+CFGDegree Autumn 2024: Assignment 1 
+
+This file contains a demonstration of the following git commands:
+
+1 - Checking the status
+
+git status
+
+2 - Creating a branch
+
+git branch branch name
+
+3 - Adding files to a branch
+
+git add file name
+
+4 - Adding commits with meaningful messages
+
+git commit -m "brief description of what changes you have made"
+
+5 - Opening a pull request
+
+a. GitHub > your repositories > select your repository
+b. Switch to branch you want to merge from > click on open pull request
+c. 
+
+6 - Merging and deploying to main branch
+
+git merge branch name main branch...

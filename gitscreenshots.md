@@ -1,4 +1,4 @@
-These screenshots correspond with the gitcommands instructions:
+These screenshots correspond with the git commands instructions:
 
 1 - Checking the status
 
@@ -14,7 +14,7 @@ These screenshots correspond with the gitcommands instructions:
 
 4 - Adding commits with meaningful messages
 
-![Screenshot of me adding useful descriptions to my commits in MacOS terminal[(./Adding-commits.png)
+![Screenshot of me adding useful descriptions to my commits in MacOS terminal](./Adding-commits.png)
 
 5 - Opening a pull request
 

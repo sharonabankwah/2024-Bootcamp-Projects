@@ -53,4 +53,4 @@ In assignment 1, I believe the main purposes for using Git & GitHub are:
 
 How am I coping, you ask?
 
-![A sticker of a play on words 'get it girl' replacing 'get' with 'Git' for girls who program](./cfg-assignments/screenshots/Gititgirl.jpg)
+![A sticker of a play on words 'get it girl' replacing 'get' with 'Git' for girls who program](./screenshots/Gititgirl.jpg)

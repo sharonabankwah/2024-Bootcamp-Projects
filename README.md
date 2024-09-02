@@ -6,7 +6,7 @@
 
 - Managing sales support activities, including data handling and administrative tasks, with a focus on improving operational efficiency
 
-& An aspiring Data/Software Engineer ***(open to both career pathways)***  with a growing skill set in Python & SQL :nerd_face:
+Additionally, an aspiring Data/Software Engineer ***(open to both career pathways)***  with a growing skill set in Python & SQL :nerd_face:
 
 **Experience**
 
@@ -20,6 +20,9 @@
 - SQL
 
 **Len's Slice Project Overview**
+
+> [!NOTE]
+> This is not a CFG project, but still useful to share.
 
 This project allowed me to put into practice my understanding of how lists work.
 
@@ -40,17 +43,16 @@ print(unsold_pizza)
 
 For more information about my experience, please visit my LinkedIn profile [here](https://www.linkedin.com/in/sharonabankwah/)
 
-***Confession...*** this is my first time using Git & GitHub :hand_over_mouth:
+***Fun fact...*** this is actually my first time using Git & GitHub :hand_over_mouth:
 
-But, already I can see how useful it'll be for collaborating with my instructors and peers during the CFGDegree Autumn 2024 
+Can you tell? _I hope not!_ Anyways, below is a quick breakdown of how I plan to use Git & GitHub for my first assignment
 
-In assignment 1, I believe the main purposes for using Git & GitHub are:
+- [x] Create a GitHub account and a private repository called 'CFG-Assignments'
+- [x] Clone this private repository onto my local device and create a README.md file
+- [x] Demonstrate Git commands like checking the status, creating branches, committing changes
+- [x] Creating additional files explaining git concepts  
 
-- Learning to create and store directories and files locally onto our devices
-- Learning to document our work and tracking changes over time 
-- Demonstrating key Git & GitHub commands such as branching, committing changes, and creating pull and push requests
-- Developing skills in collaborating and sharing work remotely
+<div align="center">
+  <img src="./Screenshots/Gititgirl.jpg" alt="A sticker of a play on words 'get it girl' replacing 'get' with 'Git' for girls who program" />
+</div>
 
-How am I coping, you ask?
-
-![A sticker of a play on words 'get it girl' replacing 'get' with 'Git' for girls who program](./Screenshots/Gititgirl.jpg)

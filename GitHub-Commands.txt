@@ -44,5 +44,5 @@ git commit -m "Brief description of what changes you have made"
 
 6 - Merging and deploying to main branch
 
-# Confirm the pull request > Merge and delete new branch
+# Confirm the pull request > merge and delete new branch
 

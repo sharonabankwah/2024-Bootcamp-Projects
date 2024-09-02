@@ -1,0 +1,13 @@
+This file contains a demonstration of the following git command:
+
+1 - Create a requirements file
+
+touch requirements.txt
+
+2 - Edit requirements file
+
+nano requirements.txt
+
+Requirements files are a list of dependencies needed in a project, they act also act as an installation guide 
+
+It's useful for knowing what Python packages are needed for a project, particularly to ensure that there is compatibility within a project

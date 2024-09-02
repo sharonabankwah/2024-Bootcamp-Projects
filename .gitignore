@@ -7,3 +7,7 @@ touch .gitignore
 2 - Edit .gitignore file
 
 nano .gitignore
+
+.gitignore files are directories and files that are to be ignored in a repository. 
+
+This will tell Git which directories and files to disregard particularly when it comes to tracking. 

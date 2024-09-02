@@ -1,0 +1,9 @@
+This file contains a demonstration of the following git command: 
+
+1 - Create a .gitignore file
+
+touch .gitignore
+
+2 - Edit .gitignore file
+
+nano .gitignore

@@ -19,7 +19,7 @@ CREATE TABLE influencers ( -- Created first table, added columns with different 
     influencer_last_name VARCHAR(100),
     social_media_handle VARCHAR(100) NOT NULL, -- Social media handles have to be recorded
     social_media_followers INT,
-	influencer_gender VARCHAR(50),
+    influencer_gender VARCHAR(50),
     UNIQUE (social_media_handle) -- Social media handles can't be the same
 );
 
@@ -32,16 +32,16 @@ INSERT INTO influencers ( -- Added values into the columns
     influencer_gender
 )
 VALUES
-	(1, "Alice", "Thomas", "@alxcext", 640000, "Female"),
-	(2, "Cinzia", "Baylis-Zullo", "@cinziabayliszullo", 540000, "Female"),
-	(3, "Ewoma", "Ukeleghe", "@drewomaukeleghe", 210000, "Female"),
-	(4, "Grace", "Beverley", "@gracebeverley", 1000000, "Female"),
-	(5, "Jessica", "Hunt", "@jesshunt2", 1700000, "Female"),
-	(6, "Molly", "Hague", "@mollymae", 8500000, "Female"),
-	(7, "Melissa", "Holdbrook-Akposoe", "@melissaswardrobe", 350000, "Female"),
-	(8, "Noorie", "Ana", "@noorieana", 1330000, "Female"),
-	(9, "Tennille", "Jenkins", "@thetennillelife", 3150000, "Female"),
-	(10, "Uche", "Natori", "@uchjn", 6260000, "Female")
+    (1, "Alice", "Thomas", "@alxcext", 640000, "Female"),
+    (2, "Cinzia", "Baylis-Zullo", "@cinziabayliszullo", 540000, "Female"),
+    (3, "Ewoma", "Ukeleghe", "@drewomaukeleghe", 210000, "Female"),
+    (4, "Grace", "Beverley", "@gracebeverley", 1000000, "Female"),
+    (5, "Jessica", "Hunt", "@jesshunt2", 1700000, "Female"),
+    (6, "Molly", "Hague", "@mollymae", 8500000, "Female"),
+    (7, "Melissa", "Holdbrook-Akposoe", "@melissaswardrobe", 350000, "Female"),
+    (8, "Noorie", "Ana", "@noorieana", 1330000, "Female"),
+    (9, "Tennille", "Jenkins", "@thetennillelife", 3150000, "Female"),
+    (10, "Uche", "Natori", "@uchjn", 6260000, "Female")
 ;
 
 /* Table 2 contains data about the products that are available to purchase at the PR event,

@@ -15,7 +15,7 @@ this includes their id, first and last name, social media handle, social media f
 
 CREATE TABLE influencers ( -- Created first table, added columns with different data types
     influencer_id INT PRIMARY KEY, 
-	influencer_first_name VARCHAR(100),
+    influencer_first_name VARCHAR(100),
     influencer_last_name VARCHAR(100),
     social_media_handle VARCHAR(100) NOT NULL, -- Social media handles have to be recorded
     social_media_followers INT,
@@ -48,7 +48,7 @@ VALUES
 this includes the product number, category breakdown, product name, price, skin type (if applicable) and ratings */
 
 CREATE TABLE products ( -- Created second table, added columns with different data types
-	product_id INT PRIMARY KEY,
+    product_id INT PRIMARY KEY,
     product_category VARCHAR(100),
     product_subcategory VARCHAR(100),
     product_name VARCHAR(100),
@@ -59,7 +59,7 @@ CREATE TABLE products ( -- Created second table, added columns with different da
 );
 
 INSERT INTO products ( -- Added values into the columns
-	product_id,
+    product_id,
     product_category,
     product_subcategory,
     product_name,
@@ -68,7 +68,7 @@ INSERT INTO products ( -- Added values into the columns
     ratings
 )
 VALUES 
-	(2317, "Makeup", "Complexion", "Estee Lauder Double Wear Foundation", 39.50, "Combination to oily skin", 4),
+    (2317, "Makeup", "Complexion", "Estee Lauder Double Wear Foundation", 39.50, "Combination to oily skin", 4),
     (2318, "Makeup", "Complexion", "Huda Beauty Easy Blur Foundation", 32.00, "Dry skin", 3),
     (2319, "Makeup", "Lips", "Summer Fridays Lip Butter Balm", 23.00, NULL, 4),
     (2320, "Makeup", "Lips", "Dior Addict Lip Glow Oil", 32.00, NULL, 2),
@@ -92,8 +92,8 @@ VALUES
 This includes the purchase number, influencer number, product number and the date of purchase */
 
 CREATE TABLE influencer_purchases ( -- Created third table, added columns with different data types
-	purchase_id INT,
-	influencer_id INT,
+    purchase_id INT,
+    influencer_id INT,
     product_id INT,
     date_of_purchase DATE,
     FOREIGN KEY (influencer_id) REFERENCES influencers(influencer_id), -- Linked to the influencers table
@@ -101,14 +101,14 @@ CREATE TABLE influencer_purchases ( -- Created third table, added columns with d
 );
 
 INSERT INTO influencer_purchases ( -- Added values into the columns
-	purchase_id,
-	influencer_id,
+    purchase_id,
+    influencer_id,
     product_id,
     date_of_purchase
 )
 VALUES
 -- Transaction 5678: influencer 1 buys 4 products
-	(5678, 1, 2317, CURRENT_DATE),
+    (5678, 1, 2317, CURRENT_DATE),
     (5678, 1, 2319, CURRENT_DATE),
     (5678, 1, 2331, CURRENT_DATE),
     (5678, 1, 2329, CURRENT_DATE),
@@ -117,8 +117,8 @@ VALUES
     (5679, 2, 2333, CURRENT_DATE),
 -- Transaction 5680: influencer 3 buys 3 products
     (5680, 3, 2323, CURRENT_DATE),
-	(5680, 3, 2326, CURRENT_DATE),
-	(5680, 3, 2318, CURRENT_DATE),
+    (5680, 3, 2326, CURRENT_DATE),
+    (5680, 3, 2318, CURRENT_DATE),
 -- Transaction 5681: influencer 4 buys 3 products
     (5681, 4, 2333, CURRENT_DATE),
     (5681, 4, 2327, CURRENT_DATE),
@@ -191,7 +191,7 @@ VALUES
 this includes any transactions made after the PR event */
 
 SELECT 
-	ip.purchase_id,
+    ip.purchase_id,
     ip.influencer_id,
     ip.date_of_purchase
 FROM 
@@ -218,7 +218,7 @@ GROUP BY
  
 SELECT 
 	ip.influencer_id,
-    SUM(CEIL(p.price)) total_spent -- Gets the total sum and rounds up the price of products purchased
+        SUM(CEIL(p.price)) total_spent -- Gets the total sum and rounds up the price of products purchased
 FROM 
 	influencer_purchases ip
 INNER JOIN 
@@ -242,7 +242,7 @@ LEFT JOIN
 	products p ON ip.product_id = p.product_id -- Joins the p table to the ip table
 WHERE 
 	i.social_media_followers > 1000000 -- Filters the results set to influencers who have 1m + followers
-    AND p.price = (SELECT MAX(price) FROM products) -- Subquery gets the highest priced product and filters the results set
+        AND p.price = (SELECT MAX(price) FROM products) -- Subquery gets the highest priced product and filters the results set
 ;
 
 /* Query 5 retrieves the data of influencers who purchased products for specific skin conditions
@@ -252,7 +252,7 @@ SELECT
 	i.influencer_id,
 	CONCAT(i.influencer_first_name, " ", i.influencer_last_name) influencer_full_name, -- Gets first name and last name as a single string
 	i.social_media_handle,
-    p.skin_type
+        p.skin_type
 FROM
 	influencers i
 INNER JOIN 

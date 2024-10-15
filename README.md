@@ -1,11 +1,10 @@
 # Online Library API
 
 ## Contents
-- [Introduction](#introduction)
-- [Installation Requirements](#installation-requirements)
-- [Configuration](#configuration)
-- [API](#api)
-- [Expected Outcomes](#expected-outcomes)
+- [Introduction]
+- [Installation Requirements]
+- [API]
+- [Expected Outcomes]
 
 ## Introduction
 This file provides instructions on how to set up and run the Online Library API. The API allows users to access a collection of books, including searching books by author and deleting books by ID.
@@ -17,22 +16,35 @@ Please ensure you have the following installed:
 - **Flask**: A web framework for Python, to install, run: pip install Flask
 - **MySQL**: A MySQL connector, to install, run: pip install mysql-connector-python
 
-## Configuration
-  import mysql.connector
-
-def _connect_to_db():
-    return mysql.connector.connect(
-        host='localhost',
-        user='your_username',
-        password='your_password',
-        database='library'
-    )
-
-Replace your_username, your_password, and library with your MySQL database credentials and the name of your database.
-
 ## API
 
-app.py
-client.py
+You should open the following Python files:
+
+- config.py 
+- db_utils.py
+- app.py
+- main.py
+- client-side.py
+
+Step-by-step:
+
+1. Set up the config file with personal details (do not share!)
+2. Create and insert sample data into your MySQL database
+
+For reference:
+
+CREATE TABLE books (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200),
+    author VARCHAR(200),
+    publishing_year INT,
+    isbn VARCHAR(50)
+); 
+
+3. Open the app.py to run the API, click on the link
+4. Open the main.py to run the interactive user script
 
 ## Expected outcome
+
+- You will be welcomed by the online library and given options
+- Based on the user input you can either view all books, search by author or delete by id

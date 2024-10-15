@@ -38,7 +38,8 @@ CREATE TABLE books (
     title VARCHAR(200),
     author VARCHAR(200),
     publishing_year INT,
-    isbn VARCHAR(50)
+    isbn VARCHAR(50),
+    availability VARCHAR(100)
 ); 
 
 3. Open the app.py to run the API, click on the link

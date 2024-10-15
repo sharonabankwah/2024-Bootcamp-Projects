@@ -1,10 +1,10 @@
 # Online Library API
 
 ## Contents
-- [Introduction]
-- [Installation Requirements]
-- [API]
-- [Expected Outcomes]
+- [Introduction](#introduction)
+- [Installation Requirements](#installation-requirements)
+- [API](#api)
+- [Expected Outcomes](#expected-outcomes)
 
 ## Introduction
 This file provides instructions on how to set up and run the Online Library API. The API allows users to access a collection of books, including searching books by author and deleting books by ID.

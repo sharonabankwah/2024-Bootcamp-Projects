@@ -1,58 +1,51 @@
-## **Hello :love_letter: I'm Sharon!** 
+# Online Library API
 
-### **About Me**
+## Contents
+- [Introduction](#introduction)
+- [Installation Requirements](#installation-requirements)
+- [API](#api)
+- [Expected Outcomes](#expected-outcomes)
 
-**Junior Sales Support Executive**
+## Introduction
+This file provides instructions on how to set up and run the Online Library API. The API allows users to access a collection of books, including searching books by author and deleting books by ID.
 
-- Managing sales support activities, including data handling and administrative tasks, with a focus on improving operational efficiency
+## Installation Requirements
+Please ensure you have the following installed:
 
-Additionally, an aspiring Data/Software Engineer ***(open to both career pathways)***  with a growing skill set in Python & SQL :nerd_face:
+- **Python**:
+- **Flask**: A web framework for Python, to install, run: pip install Flask
+- **MySQL**: A MySQL connector, to install, run: pip install mysql-connector-python
 
-**Experience**
+## API
 
-**Code First Girls**
-- Intro to Python
-- Intro to SQL
-- Intro to Java
+You should open the following Python files:
 
-**Codeacademy**
-- Python 3 - (Relevant project: Len's Slice. Utilised my knowledge of Python lists to organise sales data for an imaginary pizza place in New York :pizza:)
-- SQL
+- config.py 
+- db_utils.py
+- app.py
+- main.py
+- client-side.py
 
-**Len's Slice Project Overview**
+Step-by-step:
 
-> [!NOTE]
-> This is not a CFG project, but still useful to share.
+1. Set up the config file with personal details (do not share!)
+2. Create and insert sample data into your MySQL database
 
-This project allowed me to put into practice my understanding of how lists work.
+For reference:
 
-1. Compiled a list of available pizza slice toppings and established pricing for each topping option
-2. Calculated the total number of available toppings and stored the result in a variable
-3. Printed a message confirming the number of toppings offered for customer awareness
-4. Created a two-dimensional list pairing each topping with its corresponding price and sorted this in ascending order
-5. Simulated customer orders by adding and removing items from the list to determine least popular pizza slice toppings
-6. Generated a report revealing  which pizza slices remained unsold at the end of the day   
+CREATE TABLE books (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200),
+    author VARCHAR(200),
+    publishing_year INT,
+    isbn VARCHAR(50),
+    availability VARCHAR(100)
+); 
 
-The block of code below for example demonstrates how I utilised _slicing_ in this project:   
+3. Open the app.py to run the API, click on the link
+4. Open the main.py to run the interactive user script
 
-```
-# Slice the list leaving only the unsold pizza slices to determine least popular pizza slice toppings
-unsold_pizza = pizza_and_prices[:3]
-print(unsold_pizza)
-``` 
+## Expected outcome
 
-For more information about my experience, please visit my LinkedIn profile [here](https://www.linkedin.com/in/sharonabankwah/)
-
-***Fun fact...*** this is actually my first time using Git & GitHub :hand_over_mouth:
-
-Can you tell? _I hope not!_ Anyways, below is a quick breakdown of how I plan to use Git & GitHub for my first assignment
-
-- [x] Create a GitHub account and a private repository called 'CFG-Assignments'
-- [x] Clone this private repository onto my local device and create a README.md file
-- [x] Demonstrate Git commands like checking the status, creating branches, committing changes
-- [x] Creating additional files explaining git concepts  
-
-<div align="center">
-  <img src="./Screenshots/Gititgirl.jpg" alt="A sticker of a play on words 'get it girl' replacing 'get' with 'Git' for girls who program" />
-</div>
-
+- You will be welcomed by the online library and given options
+- Based on the user input you can either view all books, search by author or delete by id

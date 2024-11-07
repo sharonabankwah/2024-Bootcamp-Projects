@@ -1,3 +1,5 @@
+ # Command-line interface script
+
 from app import app, get_all_books, get_books_by_author, delete_book
 from db_utils import get_all_books
 

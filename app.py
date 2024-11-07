@@ -1,3 +1,5 @@
+# Flask application
+
 from flask import Flask, jsonify, request
 from db_utils import get_all_books, get_books_by_author, delete_book_by_id
 

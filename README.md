@@ -43,14 +43,10 @@ This console application recommends travel destinations based on your preferred 
 **- Text File Output:** Results are saved in city_recommendations.txt, including date and time.
 
 ### Example Output
-Example output if a city is found:
-```Current date and time: 2023-11-07 14:30
-Your recommended city break: Barcelona, it's warm and has a temperature of 22°C!
-Weather: clear sky```
+If a city is found:
+```Current date and time: 2023-11-07 14:30. Your recommended city break: Barcelona, it's warm and has a temperature of 22°C! Weather: clear sky```
 
-Example output if no city matches:
-
-```Sorry, we couldn't find any cities with warm weather in North America.```
+If no city matches: ```Sorry, we couldn't find any cities with warm weather in North America.```
 
 ### Notes 
 - This project assumes that the OpenWeather API access key is private. Do not share your API key.

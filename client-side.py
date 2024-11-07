@@ -1,3 +1,10 @@
+# This client-side script interacts with the Flask-based Online Library API.
+# It allows the user to:
+# 1. View all books in the library.
+# 2. Search for books by a specific author.
+# 3. Delete a book by its ID.
+# The script makes HTTP requests to the API endpoints and displays the results.
+
 import requests
 
 main_url = 'http://127.0.0.1:5000/books'

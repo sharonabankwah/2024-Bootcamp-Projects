@@ -1,3 +1,5 @@
+# Functions to interact with the database
+
 import mysql.connector
 from config import HOST, USER, PASSWORD, DATABASE
 

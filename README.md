@@ -1,4 +1,4 @@
-# Online Library API
+# Online Library App
 
 This project implements a simple online library API with a Flask backend, integrated with a MySQL database. It allows users to view all books, search for books by a specific author, and delete books by ID. The system supports interacting with the library via a set of API endpoints and also provides a command-line interface for interacting with the library.
 
